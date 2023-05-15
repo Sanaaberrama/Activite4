@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<!-- saved from url=(0051)file:///C:/Users/Dell/Desktop/activite%204/tic.html -->
+<html lang="fr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>activite 5 tic</title>
+	<link rel="stylesheet" href="file:///C:/Users/Dell/Desktop/activite%204/nouveay%20document%20texte.css">
+	<style>
+	/*sous titre*/
+		L{
+		color:#666699;
+		font-size: 25px;
+		margin-bottom:10px; 
+		text-transform:uppercase;}
+	
+/* Styles pour les sections */
+		section {
+			background-color: #e6e6e6;
+			border-radius: 10px;
+			box-shadow: 0px 0px 20px #dcdcdc;
+			margin: 20px;
+			padding: 20px;
+		}
+
+		/* Styles pour les  grands titres */
+		b {
+			color: purple;
+			font-size: 32px;
+			margin-bottom: 10px;
+			text-transform: uppercase;
+		}
+
+		/* Styles pour les listes � puces */
+		c	{	list-style-type: none;
+			margin-left: 0;
+			padding-left: 20px;
+		}
+
+		/* Styles pour les �l�ments de liste � puces */
+		d {
+			margin-bottom: 10px;
+			position: relative;
+			padding-left: 30px;
+		}
+
+
+
+		a:hover {
+			text-decoration: underline;
+		}
+		
+	h1{
+	border-left :15px solid purple}
+		.skills-container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-top: 50px;
+		}
+		.skill {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			margin-bottom: 10px;
+			width: 300px;
+		}
+		.skill-name {
+			font-size: 30px;
+			font-weight: bold;
+			margin-right: 10px;
+		}
+		.skill-bar {
+			width: 200px;
+			height: 20px;
+			border-radius: 10px;
+			background-color: gray;
+			position: relative;
+			overflow: hidden;
+		}
+		.skill-bar-fill {
+			position: absolute;
+			left: 0;
+			top: 0;
+			height: 100%;
+			background-color: purple;
+			animation: mymove;
+		}
+		.skill-icon {
+			font-size: 20px;
+			color: purple;
+			margin-right: 10px;
+			transform: translateX(-20px);
+			opacity: 0;
+			animation: icon-appear 1s ease-out forwards;
+		}
+		programation fill {
+			from {width: 0;}
+			to {width: 100%;}
+		}
+		@keyframes icon-appear {
+			from {transform: translateX(-20px); opacity: 0;}
+			to {transform: translateX(0); opacity: 1;}
+		}
+		
+	#ex1{
+	background-color: #bfbfbf}
+        
+        header {
+            background-color: #b3b3cc;
+            color: white;
+            padding: 40px;
+            text-align: left-side;
+			
+        }
+
+        h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin: 0;
+            font-weight: normal;
+            margin-top: 10px;
+        }
+
+        nav {
+            background-color: #52527a;
+            padding: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: #fff;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #111;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px 0;
+            background-color: #fff;
+        }
+
+        h6 {
+            font-size: 24px;
+            margin: 0 0 10px;
+        }
+
+        p {
+            font-size: 18px;
+            margin: 0;
+        }
+
+        ul {
+            font-size: 18px;
+            margin: 0;
+            padding-left: 20px;
+        }
+		progress-container {
+			width: 100px;
+			height: 100px;
+			position: relative;
+			display: inline-block;
+			margin: 10px;
+		}
+		
+		
+    </style>
+	</head><body>
+	<table>
+  <thead>
+    <tr>
+      <th>MATRICULE</th>
+      <th>NOM</th>
+      <th>PRENOM</th>
+      <th>SPECIALITE</th>
+      <th>SECTION</th>
+      <th>PARTIE</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>222231519401</td>
+      <td>YAHIAOUI</td>
+      <td>WISSAM</td>
+      <td>INFORMATIQUE</td>
+      <td>06</td>
+      <td>PARTIE 1</td>
+    </tr>
+    <tr>
+      <td>222231504513</td>
+      <td>MANSOUR</td>
+      <td>NAILA</td>
+      <td>INFORMATIQUE</td>
+      <td>06</td>
+      <td>PARTIE 1</td>
+    </tr>
+    <tr>
+      <td>222231568302</td>
+      <td>MIRI</td>
+      <td> MOHAMAD WIAAM</td>
+      <td>INFORMATIQUE</td>
+      <td>06</td>
+      <td>PARTIE 2</td>
+    </tr>
+    <tr>
+      <td>212231703814</td>
+      <td>RAHOUAL</td>
+      <td>MELISSA</td>
+      <td>INFORMATIQUE</td>
+      <td>06</td>
+      <td>PARTIE 2</td>
+    </tr>
+    <tr>
+      <td>222231440315</td>
+      <td>BENCHOUCHE</td>
+      <td>INES</td>
+      <td>INFORMATIQUE</td>
+      <td>06</td>
+      <td>PARTIE 3</td>
+    </tr>
+    <tr>
+      <td>212231543601</td>
+      <td>BERRAMA</td>
+      <td>SANAA</td>
+      <td>INFORMATIQUE</td>
+      <td>06</td>
+      <td>PARTIE 3</td>
+    </tr>
+    <tr>
+      <td>222231648405</td>
+      <td>DJELID</td>
+      <td>LYNA KHADOUDJA </td>
+      <td>INFORMATIQUE</td>
+      <td>06</td>
+      <td>PARTIE 4</td>
+    </tr>
+    <tr>
+      <td>222231547417</td>
+      <td>BOUARABA</td>
+      <td>HADJER</td>
+      <td>INFORMATIQUE</td>
+      <td>O6</td>
+      <td>PARTIE 4</td>
+    </tr>
+    <tr>
+      <td>222231480805</td>
+      <td>DEBBAGH</td>
+      <td>ILHAM</td>
+      <td>LNFORMATIQUE</td>
+      <td>06</td>
+      <td>PARTIE 5</td>
+    </tr>
+    <tr>
+      <td>222231404208</td>
+      <td>ABBAD</td>
+      <td>SALSABIL</td>
+      <td>INFORMATIQUE</td>
+      <td>06</td>
+      <td>PARTIE 5</td>
+    </tr>
+  </tbody>
+</table>
+	<header>
+
+        <h1>RESUME DU PROGRAMME DU MODULE TIC </h1>
+        
+    </header>
+    <nav>
+        <ul>
+            <li><a href="file:///C:/Users/Dell/Desktop/activite%204/tic.html#about">PARTIE 1</a></li>
+            <li><a href="file:///C:/Users/Dell/Desktop/activite%204/tic.html#experiances">PARTIE 2</a></li>
+            <li><a href="file:///C:/Users/Dell/Desktop/activite%204/tic.html#skills">PARTIE 3</a></li>
+            <li><a href="file:///C:/Users/Dell/Desktop/activite%204/tic.html#partie4">PARTIE 4</a></li><li>
+			</li><li><a href="file:///C:/Users/Dell/Desktop/activite%204/tic.html#partie5"> PARTIE 5</a></li><li>
+        </li></ul>
+    </nav>
+    <section id="about">
+        <h1><div id="ex1">PARTIE 1: RESUME DU CHAPITRE 1</div></h1>
+		<section>
+<b>1/ LES TECHNIQUE DE LINFORMATUIN ET LA COMMUNICATION :</b>
+<h3>  techniques de l'information et de la communication (TIC) sont des outils qui permettent de manipuler, traiter, produire, transmettre, modifier et echanger des informations sous differentes formes, telles que vocale, images   et autres , Les TIC resultent de la convergence de l'informatique, des telecommunications, des electroniques et de l'audiovisuel.  et regroupent les outils materiels et logiciels qui permettent aux utilisateurs de communiquer, transmettre, acceder aux sources d'informations, stocker, manipuler et produire des donnees sous forme de texte, image, son ou video en utilisant des techniques telles que l'informatique, l'audiovisuel, le multimedia et les telecommunications. </h3>
+</section>
+
+<section>
+<b>2/ CATEGOIES ET OBJECTIFS:</b>
+<h3>Les TIC sont presentes dans 3 grandes categories :</h3>
+<ul>
+<li> La teleinformatique .</li>
+<li>La Telecommunication. </li>
+<li> L electronique </li>
+<li>La connectivite </li>
+<li>La modularite</li> 
+<li>Une implantation simple ,Une utilisation facile et La fiabilite.</li>
+ </ul>
+</section>
+
+<section>
+<b>3/COMPOSANTS DE  TIC :  </b>
+<h3> <font color="grey">La partie materielle </font>qui se consiste des apareilles numeriques et serveurs et<font color="grey"> La partie logicielle</font> </h3>
+</section>
+<section>
+<b>4/CARACTERISTIQUE</b>
+
+<h3>la TIC ce caracterise par sa rapidite , decentralisation du pouvoir ,Un meilleur acces aux informations, La rationalite ,La mondialisation et La repartition. </h3>
+</section>
+<section>
+<b>5.INITIATION AUX TECHNIQUE DE COMMUNICATION</b>
+<ul><l>a/OBJECTIFS DE COMMUNICATION</l></ul>
+
+<h3>Les objectifs de communication correspondent aux reactions que l on attend du recepteur. </h3>
+<h3>Un objectif de communication doit se definir selon 3 dimensions : </h3>
+<h3>Au niveau  cognitif  ou le but de la communication est d informer et de faire connaitre une marque, un produit, une idee ou une entreprise   , Au stade � affectif � ou on peut  modifier ou renforcer l'image d'un produit ou d'une marque   et Au stade � comportemental �. </h3>
+
+
+<ul><l> b/SYSTEME DE COMMUNICQTION :</l></ul>
+
+<h3>En general un systeme de communication contient :<font color="grey">Les partenaires de communication ,Les vecteurs, Les fonctions et le Bruit </font>. </h3>
+<ul><l>c/Les types de communication :</l></ul>
+
+<h3>La communication prend des formes differentes telle que : </h3>
+<h3> La communication institutionnelle et La communication commerciale ou de produit.</h3>
+
+
+<lu><l>d/MEDIA ET MULTIMEDIA : </l></lu>
+
+<h3 style="color:lightGray;">1-Media:</h3>
+<h3>Un media est un moyen impersonnel permettant une diffusion large et collective d'informations, quel que soit le support.
+ </h3>
+<h3 style="color:lightGray;">2-Multimedia: </h3>
+<h3>  Ensemble des techniques et des produits qui permettent l'utilisation simultanee et interactive de plusieurs modes de representation de l'information. 
+</h3>
+</section>
+		</section>
+		
+    <section id="experiances">
+	<h1><div id="ex1">PARTIE 2 : RESUME DU CHAPITRE 2</div></h1>
+	<section>
+<b>1/ Reseau informatique :</b>
+<h3>Un reseau informatique est un ensemble d equipement interconnectes pour permettre la communication de donnees entre les applications.</h3>
+<h3> Le r seau informatique s appuie essentiellement sur deux notions fondamentales qui sont l interconnexion et la communication.</h3>
+</section>
+  <section>
+    <b>2/ Les caracteristiques de base d un reseau :</b>
+    <h3>Un reseau est caracterise par :</h3>
+	<ul>
+	<li><h3>la topologie (qui definit l architecture d un reseau)</h3></li> 
+	<li> <h3>le debit exprime en bits/s </h3></li>
+	<li><h3>la distance maximale qui depend de la technologie mise en oeuvre </h3></li>
+	<li><h3> nombre maximal de noeuds que l on peut interconnecter.</h3></li>
+	</ul>
+</section>
+<b>3/Terminologie en reseau :</b>
+
+<ul>
+<li> <h3><font color="grey"> Station de travail</font> : c est toutes les machines capables de d envoyer des donnees vers un reseau</h3></li>
+<li><h3><font color="grey"> Noeud </font>: c est toute entite d information pouvant etre envoye sur le reseau</h3></li>
+<li><h3><font color="grey"> Paquet </font>: c est la plus petite unite d information pouvant etre envoye sur le reseau.</h3></li>
+<li><h3><font color="grey"> Reseaux heterogenes</font> : le reseau heterogene est un reseau d ordinateurs relies entre eux par l Ethernet.</h3></li>
+<li><h3><font color="grey"> Le debit</font>: est represente par la vitesse de connexion.<l i="">
+</l></h3>
+</li></ul>
+</section>
+<section>
+<b>4/ Elements d un reseau :</b>
+<h3>Le reseau est constitue par les ordinateurs, les logiciels, les supports de LAN, les equipements d interconnexion du LAN.</h3>
+</section>
+<section>
+<b>5/Classification des reseaux :</b>
+<h3>Les reseaux peuvent etre classifies en fonction des diffrents criteres suivants :</h3>
+<ul><l>a/ Par l envergure (LAN, MAN, WAN)</l></ul>
+<ul>
+<li><h3>LAN : Reseau local d entreprise.</h3></li>
+<li><h3>MAN : Reseau metropolitain ou urbain.</h3></li>
+<li><h3>WAN : Reseau grande distance.</h3></li>
+
+</ul>
+<ul><l>b/ L ouverture :</l></ul>
+
+<ul>
+<h3>
+<li><font color="grey">Intranet </font>(Reseau local d entreprise)</li>
+<li><font color="grey">Extranet</font> (Reseau d entreprise ouvert vers l exterieur)</li>
+<li><font color="grey">internet</font> (Reseau d entreprise ouvert vers l interieur)</li>
+</h3>
+</ul>
+<ul><l>c/ Les supports de connexion :</l></ul>
+<h3>
+<ul>
+<li>Il existe deux types de supports de connexion (filaire et sans fils)</li>
+<li><font color="grey"> Reseaux filaires </font>(fibre optique, reseau Telephonique)</li>
+<li><font color="grey">Reseaux sans fils </font>(ondes radios, bluetooth)</li>
+
+</ul>
+</h3>
+<ul><l>d/    Le type d organisation :</l></ul>
+<h3><br>Il existe deux types d organisation de reseaux<br></h3>
+<h3>
+<ul>
+  <li><font color="grey">Les Reseaux d egale a egale</font> (c est les reseaux ou chaque ordinateur est libre de partager ses ressources).</li>
+  <li><font color="grey">Les reseaux clients/serveurs </font>(c est les reseaux ou la plupart des stations " clients " sont regit par des administrateurs a travers leurs stations)</li>
+</ul>
+</h3>
+</section>
+<section>
+  <b>6/ Les types de topologie :</b>
+  <h3>Il existe plusieurs types de topologies qui sont :</h3>
+  <h3>
+  <ul>
+    <li>a)   <font color="grey"> Les reseaux en bus </font>: les machines sont reliees par un cable coaxial (le bus) et chaque ordinateur est connecter sur le bus par un connecteurs BNC.</li>
+    <li>b)   <font color="grey"> Les reseaux en etoile </font>: toutes les stations sont connectees a un commutateur en envoyant les donnees vers ce dernier.</li>
+    <li>c)    <font color="grey">Les reseaux en anneau </font>: les ordinateurs sont situes sur une boucle et communiquent chacun a leur tour, les donnees transitent de station en station en suivant l anneau qui regenere le signale a chaque fois.
+    </li>
+    <li>d)   <font color="grey"> Les reseaux mailles </font>: les reseaux mailles utilisent plusieurs chemins de transferts entre differents noeuds, cette structure reprend un cablage en etoile regroupant differents noeuds de reseaux.</li>
+  </ul></h3>
+</section>
+    
+    <section id="skills">
+        <div id="ex1"><h1>PARTIE 3 :RESUME DU CHAPITRE 3</h1></div>
+		<section>
+   <b>1/ Les Composants materiel d un Reseau informatique.</b>
+    <ul>
+	<h3><li> <font color="grey">Les cartes reseau : </font></li></h3>
+  <h3><p>Ce sont des composants materiels qui permettent a un ordinateur de se connecter a un reseau , elles sont installees a l interieur de l ordinateur Elles permettent a l ordinateur de transmettre et de recevoir des
+   donnees via des protocoles de communication specifiques.</p></h3>
+        
+     
+    <h3><li> <font color="grey"> SWITCH : </font></li></h3>
+    
+    <h3><p> C est un composant materiel utilise pourconnecter des appareils sur un reseau local (LAN),
+        il permet au appareils de communiquer entre eux en utilisant des adresses MAC  ils sont disponibles en
+        differentes tailles
+        peuvent egalement offrir des fonctionnalites
+        avancees telles que la gestion des VLAN.
+    </p></h3>
+    
+    <h3><li> <font color="grey"> HUB : </font></li></h3>
+    
+     <h3><p>C est un composant materiel utilise pour
+        connecter plusieurs appareils sur un reseau local, il hub fonctionne comme un
+        repeteur, il recoit les donnees envoyees par un appareil et les transmete a tous les autres
+        appareils connectes.
+        Les hubs sont remplaces par des switches car ils permettent une communication plus rapide et plus securisee.
+        les hubs sont encore utilises dans des applications
+        specifiques dans des reseaux de petite taille .
+    </p></h3>
+
+</ul></section>
+<section>
+     <b> 2/Le Modele OSI. </b>
+        <ul><l>OSI (Open Systems Interconnection)</l></ul>
+    <h3><p> C est un modele de reference pour les communications de reseau. Il divise
+        les communications en sept couches distinctes, chacune ayant une fonction specifique liee a la communication
+        de donnees entre les appareils de reseau. Les sept couches sont :
+    </p></h3>
+        <h3><ul>
+            <li>liaison de donnees. </li>
+            <li> reseau. </li>
+            <li> transport . </li>
+            <li> session.</li>
+            <li> presentation et application.</li>
+        </ul></h3>
+    
+    <h3><p>Le modele OSI est souvent utilise comme reference pour la conception et la mise en oeuvre de reseaux
+        informatiques, bien qu il ne soit pas utilise dans les protocoles de communication de reseau modernes tels
+        que TCP/IP.
+    </p></h3>
+</section>
+<section>
+
+
+    <b>3/ Le Modele TCP/IP:</b>
+    <h3><p>C est un modele de reference pour les communications de reseau utilise dans la conception et la mise en oeuvre
+        des reseaux informatiques modernes. Ce modele divise les communications en quatre couches principales :
+    </p>
+    </h3>
+        <h3><ul>
+            <li> la couche liaison de donnees.</li>
+            <li> la couche reseau..</li>
+            <li> la couche transport et la couche application.</li>
+        </ul></h3>
+   
+     <h3><p>Contrairement au modele OSI, qui divise les communications en sept couches distinctes, le modele TCP/IP est
+        le modele de reference pour les protocoles de communication de reseau les plus largement utilises, tels que
+        le protocole Internet (IP), le protocole de controle de transmission (TCP) et le protocole de datagramme
+        utilisateur (UDP).
+    </p></h3>
+	</section>
+
+<section>
+    <b>4/L adressage:</b>
+    <h3><p>Les communications dans un reseau obeissent a des regles :</p></h3>
+       <h3> <ul>
+            <li>Adressage.</li>
+            <li> Architecture . </li>
+            <li> Protocoles.</li>
+        </ul> </h3>
+    
+     <h3><ul> <l> C est quoi un adressage IP : </l> </ul></h3>
+    <h3><p> Une adresse IP c est un numero qui identifie chaque ordinateur dans les reseaux qu il appartient et Il  y a
+        deux mode d adressage :
+       </p></h3>
+    <h3>
+    <font color="grey">1. ADRESSE IPV4 .</font><br>
+    <font color="grey">2. ADRESSE IPV6 .</font><br>
+     <br></h3>
+
+
+</section>
+<section>
+    <b>5/ L adresse IPV4 :</b>
+	
+     <h3><p>Les 4 octets composent une partie pour la Partie reseau et l autre pour la partie hotes .</p></h3>
+     <h3><p> adressage IPV4 s effectue selon les types suivants : </p></h3>
+    <ul>
+        <h3>
+            <li><font color="grey"> 1) L adresse reseau : </font></li>
+        </h3>
+        <h3><p> tous les bits de la partie hotes=0. </p></h3>
+        <h3>
+            <li><font color="grey"> 2) L adresse de diffusion : </font></li>
+        </h3>
+        <h3><p> il s agit d une adresse dans laquelle tous les bits de partie hotes=1. </p></h3>
+        <h3>
+            <li><font color="grey">3) L adresse hotes :</font></li>
+        </h3>
+        <h3><p> On attribue les valeurs situes entre l adresse reseau et l adresse de
+            diffusion sur {machines} situe sur cette reseau.</p></h3>
+        <h3>
+            <li> <font color="grey">4) Le masque de reseau et de sous reseaux : </font></li>
+         </h3>
+        <h3> <p> Tous les bits de la partie reseaux = 1. </p></h3>
+    </ul>
+
+
+</section>
+		</section>
+		<section id="partie4">
+		<div id="ex1"><h1>PARTIE 4: RESUME DU CHARITRE 4</h1></div>
+		
+		<section>
+		<b>1.INTRODUCTION</b>
+		
+		<ul><l>a/LE WEB ET INTERNET C EST PARAEIL</l></ul>
+		<h3><p>Bien que souvent confondus,
+		un systeme hypertexte public sur Internet qui permet de consulter des pages accessibles sur des sites. Le Web est une des applications d Internet, inventee par Tim Berners-Lee et Robert Cailliau plusieurs annees apres Internet.</p>
+		</h3>
+		<ul><l>B/LE PRINCIPE DU WWW </l></ul>
+		<h3><ul>
+		<li>consiste a acceder a des documents textuels </li>
+		<li>situes sur des machines accessibles par Internet,</li>
+		relies entre eux par des liens hypertextes.
+		<li>Actuellement, le Web sert a fournir une variete  des contenus applicatifs</li>
+		</ul></h3>
+		<ul><l>c/URL(UNIFORM RESOURCE LOCATOR)</l></ul>
+		<h3> c est Un lien hypertexte est un lien qui permet de suivre une URL (ouvrir une nouvelle page).
+   
+ elle contient :
+ </h3><h3><ul>
+<li> L adresse du serveur</li>
+<li> et l adresse de la page sur le serveur</li></ul></h3>
+
+
+</section>
+
+<section>
+	<b>2/ASPECTS TECHNIQUE DU WEB</b>
+	
+<h3><p>il y a trois :</p>
+
+<ul>
+<br><font color="grey">1. URL :</font><br>
+<li>a. Le Web permet d acceder a un ensemble de ressources</li>
+<li>b. Le mecanisme de localisation peut faire appel au protocole DNS</li>
+</ul>
+<ul>
+<br><font color="grey">2. HTTP :</font><br>
+<li>a. Protocole de niveau applicatif</li>
+<li>b. Paradigme client serveur</li>
+<li>c. Protocole sans etat (pas de "memoire " des transactions precedentes)</li></ul>
+
+<ul>
+<br><font color="grey">3. HTML :</font><br>
+<li>a. Langage de description de "" pages Web "</li>
+<li>b. Texte, images et autres objets</li>
+<li>c. Liens hypermedias entre les pages</li>
+<li>d. Programmation declarative</li><li>	</li></ul></h3>
+</section>
+<section>
+<b>3/PAGE WEB ET SITE WEB</b>
+
+ <h3><br>Une page Web, c est un document multimedia : images, textes, possibilite d interaction, liens<br>
+
+<br>Decrit element par element : titre, morceaux de texte, images.<br>
+<br>
+<ul>
+<li>1. Avec un langage de description :HTML (1992), XHTML (2002) ou HTML5</li>
+<li>2. Stocke dans un fichier : html (ou .htm, .xhtml)</li>
+<li>3 Une page Web est interpretee et affichee par un navigateur, elle est localisee sur
+Internet a l aide d une adresse (URL) </li>
+<li>4. Permet d acceder e d autres pages en suivant des liens</li>
+<li>5. Un site web est un regroupement de pages Web autour d une thematique commune
+reliees entre elles par des liens hypertextes</li>
+<li>6. Emanant d une meme entite (organisation, entreprise, particulier...), accessibles a
+partir  une page d accueil commune et a partir d une URL de base commune</li><li>
+</li><li>7. En general, localisees sur un meme serveur</li>
+<li>8. Structure sous forme d arborescence de dossiers et de fichiers (comme un disque
+local)</li>
+<li>9. Permet de definir des chemins relatifs</li>
+</ul>
+
+</h3></section>
+</section>
+
+<section>
+
+<b>4/ CREATION DUNE PAGE HTML</b>
+
+<h3><p><br>HTML : HyperText Markup Language Langage de description de pages web
+Un document HTML est :</p><br>
+<br>
+<ul>
+<li>1. Un fichier texte, construit suivant une syntaxe precise</li>
+<li>2. Structure par des balises</li>
+<li>3. Interprete (visualise) dans un navigateur (Mozilla Firefox, Internet Explorer, Safari</li>
+<li>4/Cree dans un editeur de pages web ou tout �diteur de texte</li>
+</ul><br>
+
+<ul><l>a/Les principes de langage  HTML</l></ul>
+
+ </h3><h3> <br><font color="grey">1.Les balises</font><br>
+
+<p>fichier HTML doit comporter au minimum ces 4 balises :</p>
+<ul>
+<li>&lt; html &gt; ... <!-- html -->:Delimite le debut et la fin du document</li>
+<li>&lt; head &gt; ... <!-- head -->: Entete du document</li>
+<li>&lt; title &gt; ... <!-- title -->: Titre du document</li>
+<li>&lt; body &gt; ... <!-- body --> : Corps du document"</li>
+</ul>
+
+
+
+<br><font color="grey">2.Les titres et paragraphes</font><br>
+<ul>
+<li><hn> ... </hn> : Titre de niveau n :1 a 6</li>
+<li>&lt; p &gt; ... &lt; / p &gt; : paragraphe</li>
+</ul>
+</h3></section>
+		
+		
+    
+		<section id="partie5">
+        <div id="ex1"><h1>PARTIE 5:RESUME DU CHAPITRE 5</h1></div>
+		
+        
+        <section>
+        <b>1/Git:</b>
+       <h3> <p> est un system de gestion de version les plus populaires qui permet aux utilisateurs de travailler sur une meme version de code source.</p></h3>
+	   </section>
+	   <section>
+        <b>2/Modeles de logiciel de version :</b>
+        <ul><l>a. Modrle centralise : </l></ul>
+       <h3> <p>leur principe est la centralisation de code source lie au projet</p></h3>
+        <ul><l> b/Modele distribue :  </l></ul>
+        <h3><p>le code source de projet est toujours heberger sur un serveur distant et chaque utilisateur est invitr   telecharger et heberger l integralite du code source.</p></h3>
+		</section>
+		<section>
+        <b>3/GitHub:</b>
+        <h3><p>est une plateforme de developpement de logiciels base sur git.</p></h3>
+		</section>
+		
+        <b>4/Utiliser git :</b>
+		
+        <h3><p>nous allons utiliser la console et donc un langage en lignes de commande</p>
+		<ul>
+        <li>-utiliser la ligne  de commandes et le seul moyen d acces a toutes les commandes git.</li>
+		</ul></h3>
+		</section>
+		<section>
+        <b>5/Parametrage de git :</b>
+		
+       <h3> <br>On va taper les commandes :<br>
+            Git-config --global user.name"salsabil ilhem"  et  git config global user.email "votre emali "   a la suite pour enseigner un nom et une adresse email. Et pour assurer que les informations ont bien ete enregistrees. On tape :
+			<ul>
+            <li>"Git config user.name " </li>  
+			<li>"git config user.email" </li>
+			</ul>
+            <p></p></h3>
+			</section>
+			<section>
+        <b> 6/Les etats des fichiers :</b>
+		<ul><h3>
+         <li>Modifier ("modified")</li><li>
+         </li><li>Indexer("staged")</li>
+         <li> Valider("commited")</li>
+		 <ul></ul></h3>
+		 </ul></section>
+		 <section>
+            
+        <b>7/Les zones du travail :</b>
+        <h3><p>Chaque projet Git compose de trois sections :</p>
+		<ul>
+            <li>Working tree</li>
+            <li>staged area</li>
+            <li>repository</li><h3>
+			</h3></ul>
+        <ul>
+        <h3><li>-"working tree" correspond d une extraction unique "chek out"</li></h3></ul>
+        <li> -"staging area"correspond q un simple fichier"</li>
+           -le repertoire git est ou il stocke  les  metadonnees (le coeur de Git).
+		   
+		   
+        </h3>
+		</section>
+		<section>
+		
+        <b>8/Crrer un depot Git a partir d un repertoire existant :</b>
+		
+       <h3> <p>Je vais creer un repertoire " projet Git " qui se trouve sur mon bureau et qui contient deux fichiers textes vides "fichier1.txt" et "READ ME.txt".</p>
+        <ul>
+		<li>pour initialiser un depot git on utilise la commande  "git init" on peut utiliser la commande
+            "git satuts"  pour determiner  l etat des fichiers de  notre repertoire.</li><li>
+           
+           </li><li>Pour indexer les fichiers on  utilise la commande "git commit".</li></ul>
+		   </h3>
+		   </section>
+		   <section>
+           <b> 9/Cloner un depot Git   : </b>
+           <h3><p>On utilise la commande  "git clone" apres la creation d un repo sur github nous pouvons maintenant transmettre  nos fichiers � ce repo</p>
+		   <ul>
+           
+           <li>git branch M main</li>
+           <li>git remote add origin https://github.com/selsabililhem/ExempleCloneGit.git</li>
+           <li>git push u origin main</li>
+		   </ul></h3>
+		   </section>
+		   <section>
+           <b>10/Consulter les modifications git :</b>
+		   
+           <h3><ul>-On utilise la commande "git log".</ul></h3>
+		   </section>
+		   <section>
+           <b>11/Annuler des modifications apportees a un fichier :</b>
+		   
+           <h3><ul>-On utilise la commande generale "gitcheckout  nom du fichier "" ou la nouvelle commande specialise git restaure</ul></h3><h3>
+		   </h3></section>
+		   <section>
+           <b>12/Qu est ce qu une branche :</b>
+		   
+           <h3><ul>C est simplement un pointeur leger et deplacable vers un de ces commits.</ul></h3>
+		   </section>
+		
+			
+			</body></html>
